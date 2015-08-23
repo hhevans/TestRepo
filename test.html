@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+
+<p>My first paragraph.</p>
+<script>
+function easytest(){
+var test = "EasyTest";
+ document.write("Variable test =" + test);
+ return Window.name;  // Will Get 'undefined' if called by another function and no 'return' statement
+ 
+
+};
+</script>
+
+<script>
+Window.name = "Robo-ZHEINEI32921-ok";
+ document.write("<p>This window's name is: " + easytest() +  "</p>");
+ </script>
+ 
+<script>
+
+var nice = {
+function (){
+var test = "EasyTesth";
+document.write("klo test =" + test);
+}()  // Run on load
+);
+</script>
+
+</body>
+</html>
